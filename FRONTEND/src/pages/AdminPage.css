@@ -1,0 +1,53 @@
+.admin-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+.admin-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.admin-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-content {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.note-user {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Access Denied */
+.access-denied {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.access-denied h2 {
+  color: #ff4d4d;
+}

@@ -1,0 +1,76 @@
+.notfound-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1c24, #16131a);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notfound-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.error-code {
+    font-size: 100px;
+    margin: 0;
+    color: #667eea;
+    animation: float 2s infinite ease-in-out;
+}
+
+.notfound-card h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.notfound-card p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.home-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #16171c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #1e1f29;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
